@@ -1,0 +1,71 @@
+.auth-page {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:
+        linear-gradient(rgba(135, 60, 255, 0.4), rgba(135, 60, 255, 0.0) 80%),
+        linear-gradient(-45deg, rgba(120, 155, 255, 0.9) 25%, rgba(255, 160, 65, 0.9) 75%);
+
+    &__mars {
+        width: 300px;
+        height: 300px;
+        position: absolute;
+        top: -80px;
+        left: -80px;
+        z-index: 1;
+        animation: 10s linear 0s infinite spinning_clockwise;
+    }
+
+    &__earth {
+        width: 300px;
+        height: 300px;
+        position: absolute;
+        bottom: -80px;
+        right: -80px;
+        z-index: 1;
+        animation: 10s linear 0s infinite spinning_counter_clockwise;
+    }
+
+    &__spaceship {
+        width: 300px;
+        height: 300px;
+        position: absolute;
+        bottom: -150px;
+        left: -150px;
+        z-index: 1;
+        animation: 10s linear 0s infinite spinning_clockwise;
+    }
+
+    &__spaceman {
+        width: 300px;
+        height: 300px;
+        position: absolute;
+        top: -150px;
+        right: -150px;
+        z-index: 1;
+        animation: 10s linear 5s infinite spinning_counter_clockwise;
+    }
+}
+
+@keyframes spinning_clockwise {
+    0% {
+      transform: rotate(0deg);
+    }
+
+    100% {
+      transform: rotate(360deg);
+    }
+}
+
+@keyframes spinning_counter_clockwise {
+    0% {
+      transform: rotate(0deg);
+    }
+
+    100% {
+      transform: rotate(-360deg);
+    }
+}

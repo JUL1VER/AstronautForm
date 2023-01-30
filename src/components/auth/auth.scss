@@ -1,0 +1,21 @@
+.auth {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 800px;
+    height: 600px;
+    background: #fff;
+    border-radius: 20px;
+    z-index: 2;
+    box-shadow: 0px 0px 5px #000;
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__title {
+        margin: 0;
+    }
+}
