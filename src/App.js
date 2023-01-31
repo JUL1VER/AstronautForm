@@ -1,5 +1,6 @@
-import AuthPage from './pages/AuthPage/AuthPage';
+import AuthPage from './pages/authPage/AuthPage';
 import './app.scss';
+import './global.scss';
 
 function App() {
   return (

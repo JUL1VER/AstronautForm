@@ -16,7 +16,7 @@
         top: -80px;
         left: -80px;
         z-index: 1;
-        animation: 10s linear 0s infinite spinning_clockwise;
+        animation: 30s linear 0s infinite spinning_clockwise;
     }
 
     &__earth {
@@ -26,7 +26,7 @@
         bottom: -80px;
         right: -80px;
         z-index: 1;
-        animation: 10s linear 0s infinite spinning_counter_clockwise;
+        animation: 30s linear 0s infinite spinning_counter_clockwise;
     }
 
     &__spaceship {
@@ -46,7 +46,7 @@
         top: -150px;
         right: -150px;
         z-index: 1;
-        animation: 10s linear 5s infinite spinning_counter_clockwise;
+        animation: 15s linear 0s infinite spinning_counter_clockwise;
     }
 }
 
