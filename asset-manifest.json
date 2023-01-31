@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/mars-auth/static/css/main.a53812ca.css",
+    "main.css": "/mars-auth/static/css/main.3d979796.css",
     "main.js": "/mars-auth/static/js/main.726e1cbc.js",
     "static/media/earth.webp": "/mars-auth/static/media/earth.6cfb0c367db36a376d30.webp",
     "static/media/mars.webp": "/mars-auth/static/media/mars.15b8a09657ce11a279f4.webp",
@@ -9,11 +9,11 @@
     "static/media/password-icon.svg": "/mars-auth/static/media/password-icon.0bc95551046cabecbe9e.svg",
     "static/media/email-icon.svg": "/mars-auth/static/media/email-icon.48a04e866d090fdcc24b.svg",
     "index.html": "/mars-auth/index.html",
-    "main.a53812ca.css.map": "/mars-auth/static/css/main.a53812ca.css.map",
+    "main.3d979796.css.map": "/mars-auth/static/css/main.3d979796.css.map",
     "main.726e1cbc.js.map": "/mars-auth/static/js/main.726e1cbc.js.map"
   },
   "entrypoints": [
-    "static/css/main.a53812ca.css",
+    "static/css/main.3d979796.css",
     "static/js/main.726e1cbc.js"
   ]
 }
