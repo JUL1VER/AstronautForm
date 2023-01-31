@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/marsAuth/static/css/main.31779a31.css",
-    "main.js": "/marsAuth/static/js/main.41575831.js",
-    "static/media/earth.webp": "/marsAuth/static/media/earth.6cfb0c367db36a376d30.webp",
-    "static/media/mars.webp": "/marsAuth/static/media/mars.15b8a09657ce11a279f4.webp",
-    "static/media/spaceship.webp": "/marsAuth/static/media/spaceship.0d64ebcf44a7ad69a9d0.webp",
-    "static/media/spaceman.webp": "/marsAuth/static/media/spaceman.7588b52ca2de620733ec.webp",
-    "static/media/password-icon.svg": "/marsAuth/static/media/password-icon.0bc95551046cabecbe9e.svg",
-    "static/media/email-icon.svg": "/marsAuth/static/media/email-icon.48a04e866d090fdcc24b.svg",
-    "index.html": "/marsAuth/index.html",
-    "main.31779a31.css.map": "/marsAuth/static/css/main.31779a31.css.map",
-    "main.41575831.js.map": "/marsAuth/static/js/main.41575831.js.map"
+    "main.css": "/mars-auth/static/css/main.a53812ca.css",
+    "main.js": "/mars-auth/static/js/main.726e1cbc.js",
+    "static/media/earth.webp": "/mars-auth/static/media/earth.6cfb0c367db36a376d30.webp",
+    "static/media/mars.webp": "/mars-auth/static/media/mars.15b8a09657ce11a279f4.webp",
+    "static/media/spaceship.webp": "/mars-auth/static/media/spaceship.0d64ebcf44a7ad69a9d0.webp",
+    "static/media/spaceman.webp": "/mars-auth/static/media/spaceman.7588b52ca2de620733ec.webp",
+    "static/media/password-icon.svg": "/mars-auth/static/media/password-icon.0bc95551046cabecbe9e.svg",
+    "static/media/email-icon.svg": "/mars-auth/static/media/email-icon.48a04e866d090fdcc24b.svg",
+    "index.html": "/mars-auth/index.html",
+    "main.a53812ca.css.map": "/mars-auth/static/css/main.a53812ca.css.map",
+    "main.726e1cbc.js.map": "/mars-auth/static/js/main.726e1cbc.js.map"
   },
   "entrypoints": [
-    "static/css/main.31779a31.css",
-    "static/js/main.41575831.js"
+    "static/css/main.a53812ca.css",
+    "static/js/main.726e1cbc.js"
   ]
 }
