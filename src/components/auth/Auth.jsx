@@ -1,25 +1,32 @@
 import './auth.scss';
-
+import { useState } from 'react';
 import React from 'react';
+import Form from '../form/Form';
 
 const Auth = () => {
+    const [isRegistered, setIsRegistered] = useState(true);
+
     return (
         <div className='auth'>
             <div className='auth__upper'>
-                <h2 className='auth__upper-title'>Don't have an account yet?</h2>
-                <button className='auth__button auth__upper-create' type='button'>
-                    <span className='auth__button-text auth__upper-create-text'>Sign Up</span>
+                <h2 className='auth__upper-title'>
+                    {isRegistered ? "Don't have an account yet?" : "Already have an account?"}
+                </h2>
+                <button
+                    className='auth__button auth__button_upper'
+                    type='button'
+                    onClick={() => setIsRegistered(prev => !prev)}
+                >
+                    <span className='auth__button-text auth__button-text_upper'>
+                        {isRegistered ? "Sign Up" : "Sign In"}
+                    </span>
                 </button>
             </div>
             <div className='auth__bottom'>
-                <h1 className='auth__bottom-title'>Log in into your account</h1>
-                <form action='' className='auth__bottom-form'>
-                    <input className='auth__bottom-input' type='text' />
-                    <input className='auth__bottom-input' type='password' />
-                    <button className='auth__button auth__bottom-submit' type='submit'>
-                        <span className='auth__button-text auth__bottom-submit-text'>Sign In</span>
-                    </button>
-                </form>
+                <h1 className='auth__bottom-title'>
+                    {isRegistered ? "Log in into your account" : "Create your account now"}
+                </h1>
+                <Form isRegistered={isRegistered}/>
             </div>
         </div>
     );

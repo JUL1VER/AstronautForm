@@ -17,6 +17,20 @@
         left: -80px;
         z-index: 1;
         animation: 30s linear 0s infinite spinning_clockwise;
+
+        @media (max-width: 960px) {
+          width: 250px;
+          height: 250px;
+          top: -70px;
+          left: -70px;
+        }
+
+        @media (max-width: 600px) {
+            width: 200px;
+            height: 200px;
+            top: -50px;
+            left: -50px;
+        }
     }
 
     &__earth {
@@ -27,6 +41,20 @@
         right: -80px;
         z-index: 1;
         animation: 30s linear 0s infinite spinning_counter_clockwise;
+
+        @media (max-width: 960px) {
+          width: 250px;
+          height: 250px;
+          bottom: -70px;
+          right: -70px;
+        }
+
+        @media (max-width: 600px) {
+            width: 200px;
+            height: 200px;
+            bottom: -50px;
+            right: -50px;
+        }
     }
 
     &__spaceship {
@@ -37,6 +65,20 @@
         left: -150px;
         z-index: 1;
         animation: 10s linear 0s infinite spinning_clockwise;
+
+        @media (max-width: 960px) {
+          width: 250px;
+          height: 250px;
+          bottom: -100px;
+          left: -100px;
+        }
+
+        @media (max-width: 600px) {
+            width: 200px;
+            height: 200px;
+            bottom: -100px;
+            left: -100px;
+        }
     }
 
     &__spaceman {
@@ -47,6 +89,20 @@
         right: -150px;
         z-index: 1;
         animation: 15s linear 0s infinite spinning_counter_clockwise;
+
+        @media (max-width: 960px) {
+          width: 250px;
+          height: 250px;
+          top: -125px;
+          right: -125px;
+        }
+
+        @media (max-width: 600px) {
+            width: 200px;
+            height: 200px;
+            top: -100px;
+            right: -100px;
+        }
     }
 }
 
@@ -62,10 +118,10 @@
 
 @keyframes spinning_counter_clockwise {
     0% {
-      transform: rotate(0deg);
+      transform: rotate(70deg);
     }
 
     100% {
-      transform: rotate(-360deg);
+      transform: rotate(-290deg);
     }
 }

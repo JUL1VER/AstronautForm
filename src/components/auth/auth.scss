@@ -6,12 +6,10 @@
     overflow: hidden;
     border-radius: 20px;
     z-index: 2;
-    // background: var(--white);
-    // box-shadow: 0px 0px 5px var(--black);
+    transform: translateY(-10%);
+    gap: 30px;
 
     &__button {
-        width: 150px;
-        height: 30px;
         border-radius: 15px;
         border: none;
         outline-offset: 3px;
@@ -23,10 +21,6 @@
         z-index: 1;
         transition: all 0.85s;
 
-        &-text {
-            font-weight: 700;
-        }
-
         &::before {
             content: '';
             position: absolute;
@@ -36,13 +30,144 @@
             transition: all 0.85s;
             border-radius: 50px;
             height: 100%;
-            width: 30px;
         }
 
         &:hover {
             outline-offset: 0px;
             &::before {
                 width: 100%;
+            }
+        }
+
+        &_upper {
+            outline: 1px solid var(--white);
+            color: var(--white);
+            width: 120px;
+            height: 25px;
+
+            @media (max-width: 960px) {
+                width: 110px;
+                height: 23px;
+            }
+
+            @media (max-width: 600px) {
+                width: 100px;
+                height: 21px;
+            }
+
+            &::before {
+                background: var(--earth-blue);
+                width: 25px;
+
+                @media (max-width: 960px) {
+                    width: 23px;
+                }
+
+                @media (max-width: 600px) {
+                    width: 21px;
+                }
+            }
+
+            &:hover {
+                outline: 1px solid var(--earth-blue);
+
+                &::before {
+                    background: var(--earth-blue);
+                }
+            }
+
+            &:active {
+                outline: 1px solid var(--mars-color);
+
+                &::before {
+                    background: var(--mars-color);
+                }
+            }
+        }
+
+        &_bottom {
+            outline: 1px solid var(--white);
+            color: var(--white);
+            margin: 0 auto;
+            width: 150px;
+            height: 30px;
+            margin-top: 30px;
+
+            @media (max-width: 960px) {
+                width: 140px;
+                height: 28px;
+            }
+
+            @media (max-width: 600px) {
+                width: 130px;
+                height: 26px;
+            }
+
+            &::before {
+                background: var(--mars-color);
+                width: 30px;
+
+                @media (max-width: 960px) {
+                    width: 28px;
+                }
+
+                @media (max-width: 600px) {
+                    width: 26px;
+                }
+            }
+
+            &:hover {
+                outline: 1px solid var(--mars-color);
+
+                &::before {
+                    background: var(--mars-color);
+                }
+            }
+
+            &:active {
+                outline: 1px solid var(--earth-blue);
+
+                &::before {
+                    background: var(--earth-blue);
+                }
+            }
+        }
+
+        &-text {
+            font-weight: 700;
+
+            &_upper {
+                color: var(--white);
+                font-size: 12px;
+                line-height: 12px;
+                font-family: var(--font-family);
+
+                @media (max-width: 960px) {
+                    font-size: 10px;
+                    line-height: 10px;
+                }
+
+                @media (max-width: 600px) {
+                    font-size: 9px;
+                    line-height: 9px;
+                }
+            }
+
+            &__bottom {
+                color: var(--white);
+                font-size: 14px;
+                line-height: 14px;
+                font-family: var(--font-family);
+
+                @media (max-width: 960px) {
+                    font-size: 12px;
+                    line-height: 12px;
+                }
+
+                @media (max-width: 600px) {
+                    font-size: 11px;
+                    line-height: 11px;
+                }
             }
         }
     }
@@ -52,31 +177,22 @@
         padding: 20px 0;
         width: fit-content;
         margin: 0 auto;
-        // background: var(--purple-light);
 
         &-title {
             color: var(--white);
             margin: 0 0 20px;
-        }
+            font-size: 20px;
+            line-height: 20px;
+            font-family: var(--font-family);
 
-        &-create {
-            outline: 1px solid var(--white);
-            color: var(--white);
-
-            &-text {
-                color: var(--white);
+            @media (max-width: 960px) {
+                font-size: 18px;
+                line-height: 18px
             }
 
-            &::before {
-                background: var(--earth-blue);
-            }
-
-            &:hover {
-                outline: 1px solid var(--earth-blue);
-
-                &::before {
-                    background: var(--earth-blue);
-                }
+            @media (max-width: 600px) {
+                font-size: 15px;
+                line-height: 15px;
             }
         }
     }
@@ -91,43 +207,20 @@
         margin: 0 auto;
 
         &-title {
-            margin: 0 0 20px;
+            margin: 0 0 10px;
             color: var(--white);
-        }
+            font-size: 35px;
+            line-height: 35px;
+            font-family: var(--font-family);
 
-        &-form {
-            display: flex;
-            flex-direction: column;
-            width: 100%;
-            gap: 20px;
-        }
-
-        &-input {
-            height: 30px;
-            border-radius: 5px;
-            outline: none;
-            border: none;
-        }
-
-        &-submit {
-            outline: 1px solid var(--white);
-            color: var(--white);
-            margin: 0 auto;
-
-            &-text {
-                color: var(--white);
+            @media (max-width: 960px) {
+                font-size: 28px;
+                line-height: 28px;
             }
 
-            &::before {
-                background: var(--mars-color);
-            }
-
-            &:hover {
-                outline: 1px solid var(--mars-color);
-
-                &::before {
-                    background: var(--mars-color);
-                }
+            @media (max-width: 600px) {
+                font-size: 20px;
+                line-height: 20px;
             }
         }
     }
