@@ -5,7 +5,7 @@ import './global.scss';
 function App() {
   return (
     <div className="app">
-      <AuthPage/>
+      <AuthPage />
     </div>
   );
 }
