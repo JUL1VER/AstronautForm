@@ -13,6 +13,7 @@
         color: red;
         font-size: 15px;
         line-height: 15px;
+        font-family: var(--font-family);
 
         @media (max-width: 960px) {
             font-size: 13px;
