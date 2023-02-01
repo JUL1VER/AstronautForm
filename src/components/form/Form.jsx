@@ -24,33 +24,29 @@ const Form = ({isRegistered}) => {
     }, [emailError, passwordError, isPasswordRepeatEmpty])
 
     const blurHandler = (e) => {
-        // eslint-disable-next-line default-case
-        switch (isRegistered) {
-            case true:
-                // eslint-disable-next-line default-case
-                switch (e.target.name) {
-                    case 'email':
-                        setIsEmailEmpty(true);
-                        break
-                    case 'password':
-                        setIsPasswordEmpty(true);
-                        break
+        if (isRegistered) {
+            // eslint-disable-next-line default-case
+            switch (e.target.name) {
+                case 'email':
+                    setIsEmailEmpty(true);
+                    break
+                case 'password':
+                    setIsPasswordEmpty(true);
+                    break
+            }
+        } else {
+            // eslint-disable-next-line default-case
+            switch (e.target.name) {
+                case 'email':
+                    setIsEmailEmpty(true);
+                    break
+                case 'password':
+                    setIsPasswordEmpty(true);
+                    break
+                case 'passwordRepeat':
+                    setIsPasswordRepeatEmpty(true);
+                    break
                 }
-                break
-            case false:
-                // eslint-disable-next-line default-case
-                switch (e.target.name) {
-                    case 'email':
-                        setIsEmailEmpty(true);
-                        break
-                    case 'password':
-                        setIsPasswordEmpty(true);
-                        break
-                    case 'passwordRepeat':
-                        setIsPasswordRepeatEmpty(true);
-                        break
-                }
-                break
         }
     }
 
