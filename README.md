@@ -1,12 +1,18 @@
 https://jul1ver.github.io/AstronautForm.React/
 
-# Authentication Form - React Test Project
+# Astronaut Form
 
 ## Overview
 
 This repository contains a simple React test project for an authentication form. The project aims to demonstrate my skills in building simple user interface with React and SCSS, along with implementing basic form validation and animations.
 
 With this comprehensive documentation, you will learn how to set up and run the project, understand its structure, and explore the implemented features.
+
+## GitHubPages
+
+You can easily view my website using the GitHubPages link below.
+
+[https://jul1ver.github.io/AstronautForm.React/](https://jul1ver.github.io/AstronautForm.React/)
 
 ## Table of Contents
 
