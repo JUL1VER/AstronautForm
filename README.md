@@ -1,5 +1,3 @@
-https://jul1ver.github.io/AstronautForm.React/
-
 # Astronaut Form
 
 ## Overview
